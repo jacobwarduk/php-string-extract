@@ -1,16 +1,16 @@
 PHP String Extract
 ==================
 
-PHP String Extract can be used to extract a string from within another string, given a start and end point.
+String Extract PHP can be used to extract a string from within another string, given a start and end point. Useful for certain web scraping tasks.
 
 Usage
 -----
 
-    $string = 'The quick brown fox jumped over the lazy dog';
+    $string = '<h1>Hello World!</h1>';
     
-    $extract = stringExtract($string, 'brown ', ' jumped');
+    $extract = stringExtract($string, '<h1>', '</h1>');
     
-    echo $extract;	// Echoes "fox"
+    echo $extract;	// Echoes “Hello World!”
     
 
 If successful, the function will return the desired string. If unsuccessful, the function will return **false**.
